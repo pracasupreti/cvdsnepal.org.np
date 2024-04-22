@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://cvdsnepal.org.np/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/index.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/about.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/member-staff.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/project.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/present.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/pipeline.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/gallery.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/objective.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/support.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://cvdsnepal.org.np/contact.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

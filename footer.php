@@ -1,3 +1,7 @@
+  <!-- =====================================================-->
+  <!--            Footer section start here                 -->
+  <!--======================================================-->
+
 <footer class="footer">
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -122,4 +126,6 @@ s0.parentNode.insertBefore(s1,s0);
           </div>
         </div>
       </footer>
-      <!-- .footer-->
+      <!-- =====================================================-->
+      <!--              Footer section end here                 -->
+      <!--======================================================-->

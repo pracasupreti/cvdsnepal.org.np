@@ -965,6 +965,7 @@ input:-ms-input-placeholder {
 }
 
 .section-radius {
+  min-height: 235px;
   border-radius: 20px 0;
 }
 

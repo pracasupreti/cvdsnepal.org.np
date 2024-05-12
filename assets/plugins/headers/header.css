@@ -182,7 +182,7 @@ body:not(.header-demo) .navbar-scrolling .navbar .toggle-menu-button.is-open .to
   background: #333 !important;
 }
 body:not(.header-demo) .navbar-scrolling .top-bar {
-  //border-bottom: 1px solid rgba(000, 000, 000, 0.15);
+  border-bottom: 1px solid rgba(000, 000, 000, 0.15);
   display: none;
 }
 
@@ -697,8 +697,7 @@ body:not(.header-demo) .navbar-scrolling .top-bar {
 .wrap-fixed-menu .menu-item.contact-info * {
   color: #fff;
 }
-.wrap-fixed-menu .menu-item .subtitle {
-}
+
 .wrap-fixed-menu .menu-item.contact-info {
   padding-right: 30px;
   padding-left: 30px;

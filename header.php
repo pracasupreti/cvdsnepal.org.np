@@ -37,7 +37,7 @@
          <li><a href="pipeline.php" tabindex="-1">Pipeline</a></li>
        </ul>
      </li>
-     <li><a href="gallery.php">Photo Gallery</a></li>
+     <li><a href="gallery.php">Gallery</a></li>
      <li><a href="objective.php">Objectives</a></li>
      <li><a href="support.php">Support Us</a></li>
      <li><a href="contact.php">Contact Us</a></li>
@@ -90,7 +90,7 @@
                    <li><a href="pipeline.php" tabindex="-1">Pipeline</a></li>
                  </ul>
                </li>
-               <li><a href="gallery.php">Photo Gallery</a></li>
+               <li><a href="gallery.php">Gallery</a></li>
                <li><a href="objective.php">Objectives</a></li>
                <li><a href="support.php">Support Us</a></li>
                <li><a href="contact.php">Contact Us</a></li>

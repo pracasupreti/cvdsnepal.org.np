@@ -3634,6 +3634,14 @@ input:-ms-input-placeholder {
   display: block;
   margin-right: 6px;
 }
+.footer_copyright_area {
+  /* background: #222122; */
+  text-align: center;
+  background-color: #151515;
+  padding: 13px 0px;
+  overflow: hidden;
+  color: #aaa;
+}
 
 /* ======= PRELOADER ========== */
 .preloaderjs .spinner {

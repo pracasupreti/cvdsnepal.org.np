@@ -541,7 +541,7 @@ body:not(.header-demo) .navbar-scrolling .top-bar {
 .toggle-menu-button .toggle-menu-button-icon {
   position: relative;
   position: relative;
-  top: -2px;
+  top: 9px;
   display: inline-block;
   width: 22px;
   height: 17px;
@@ -1130,7 +1130,7 @@ html [data-off-canvas*=open] {
     text-align: center;
   }
   html .menu-mobile-button {
-    top: 46px;
+    top: 21px;
   }
   .header-navibox-4,
   .header-navibox-3,

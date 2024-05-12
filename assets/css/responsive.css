@@ -397,4 +397,19 @@
   }
 }
 /* end 480px */
+@media (max-width:488px){
+  .normal-logo {
+ 
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+  }
+  .scroll-logo {
+ 
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+  }
 
+
+}

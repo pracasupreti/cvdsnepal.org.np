@@ -43,6 +43,8 @@
   position: absolute;
 }
 .sp-image {
+  width: 100%;
+  object-fit: cover;
   position: relative;
   display: block;
   border: none;

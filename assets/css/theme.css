@@ -1610,9 +1610,9 @@ input:-ms-input-placeholder {
   padding-bottom: 23px;
 }
 
-.b-advantages-2_light .b-advantages-2__title {
+/* .b-advantages-2_light .b-advantages-2__title {
   color: ;
-}
+} */
 
 .b-advantages-2_light .b-advantages-2__title:before {
   left: -63px;
@@ -3096,17 +3096,12 @@ input:-ms-input-placeholder {
 .b-services {
   padding-top: 100px;
   padding-bottom: 140px;
-  color: ;
+
   /*background-image: url("../media/general/bg/4.jpg");*/
 }
 
-.b-services .ui-title-block {
-  color: ;
-}
 
-.b-services .ui-subtitle-block {
-  color: ;
-}
+
 
 .social-net {
   margin-right: -8px;

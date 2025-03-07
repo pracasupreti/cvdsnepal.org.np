@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow: 
-
-Sitemap: http://cvdsnepal.org.np/sitemap.xml

@@ -13,14 +13,14 @@ const TiltImage = () => {
           <div className="h-[450px] xl:h-[430px] w-[80vw] xl:w-[500px] rotate-[8deg] pl-[10%] md:pl-[5%] lg:pl-[15%] xl:pl-[27%]">
             <img
               className="object-cover h-full xl:w-full w-[300px]"
-              src="https://cvdsnepal.org.np/assets/imgs/index-1.jpg"
+              src="/imgs/index-1.jpg"
               alt="image"
             />
           </div>
           <div className="h-[450px] xl:h-[430px] w-[80vw] lg:w-[600px] xl:w-[350px] rotate-[8deg] lg:relative lg:top-[220px] xl:right-[50px] 2xl:right-0 lg:right-[250px] pt-[40px] lg:pt-0 pl-[15%] lg:pl-20">
             <img
               className="object-cover h-full lg:w-full w-[300px] "
-              src="https://cvdsnepal.org.np/assets/imgs/index-2.jpg"
+              src="/imgs/index-2.jpg"
               alt="image"
             />
           </div>
@@ -114,32 +114,32 @@ const TiltImage = () => {
               <div className="grid grid-cols-3 grid-rows-2 text-xl bg-red-200  xl:h-[300px] w-full">
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-1.jpg"
+                  src="/imgs/footer-1.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-2.jpg"
+                  src="/imgs/footer-2.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-3.jpg"
+                  src="/imgs/footer-3.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-4.jpg"
+                  src="/imgs/footer-4.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-5.jpg"
+                  src="/imgs/footer-5.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-6.jpg"
+                  src="/imgs/footer-6.jpg"
                   alt=""
                 />
               </div>

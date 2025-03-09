@@ -3,10 +3,10 @@ import { VscTriangleLeft, VscTriangleRight } from "react-icons/vsc";
 
 const Hero = () => {
   const images = [
-    "/src/assets/imgs/slide-1.jpg",
-    "/src/assets/imgs/slider-1.jpg",
-    "/src/assets/imgs/slider-2.jpg",
-    "/src/assets/imgs/slider-3.jpg",
+    "/imgs/slide-1.jpg",
+    "/imgs/slider-1.jpg",
+    "/imgs/slider-2.jpg",
+    "/imgs/slider-3.jpg",
     
   ];
 

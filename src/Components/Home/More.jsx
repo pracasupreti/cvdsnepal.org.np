@@ -68,32 +68,32 @@ const More = () => {
                 <div className="grid grid-cols-3 grid-rows-2 text-xl bg-red-200  xl:h-[300px] w-full">
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-1.jpg"
+                  src="/imgs/footer-1.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-2.jpg"
+                  src="/imgs/footer-2.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-3.jpg"
+                  src="/imgs/footer-3.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-4.jpg"
+                  src="/imgs/footer-4.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-5.jpg"
+                  src="/imgs/footer-5.jpg"
                   alt=""
                 />
                 <img
                   className="w-full h-full"
-                  src="/src/assets/imgs/footer-6.jpg"
+                  src="/imgs/footer-6.jpg"
                   alt=""
                 />
               </div>

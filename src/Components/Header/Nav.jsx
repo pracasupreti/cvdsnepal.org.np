@@ -59,7 +59,7 @@ const Nav = () => {
               <div className="h-full flex items-center pt-4">
                 <img
                   className="h-full"
-                  src="https://cvdsnepal.org.np/assets/imgs/logo.png"
+                  src="/imgs/logo.png"
                   alt="logo"
                 />
               </div>

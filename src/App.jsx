@@ -4,7 +4,6 @@ import Routing from "./Components/utlis/Routing";
 import Nav from "./Components/Header/Nav";
 import Footer from "./Components/Header/Footer";
 
-
 const App = () => {
   return (
     <>

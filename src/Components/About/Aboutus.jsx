@@ -78,7 +78,7 @@ const Aboutus = () => {
             removal of societal bias and the negative stereotypes that exist
             today.
           </p>
-          <div className="tmd:text-xl text-sm  text-justify mt-10 flex items-start flex-col justify-start gap-4">
+          <div className="md:text-xl text-sm  text-justify mt-10 flex items-start flex-col justify-start gap-4">
             <p className="flex items-start gap-2 justify-start ">
               <IoIosCheckmarkCircleOutline className="text-orange-600 mt-1 lg:mt-2 xl:text-xl text-6xl sm:text-6xl h-1/4 md:text-4xl  justify-self-start" />
               To overshadow the prejudice prevalent in Nepal regarding the image

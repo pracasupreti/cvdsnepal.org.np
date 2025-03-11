@@ -34,7 +34,7 @@ const Hero = () => {
   }, [currentImageIndex]); // Re-run effect when currentImageIndex changes
 
   return (
-    <div className="w-[100vw] overflow-x-hidden relative  lg:mt-[240px] bg-black">
+    <div className="w-[100vw] overflow-x-hidden relative  lg:mt-40 mt-20 bg-black">
       <div className="h-[400px] sm:h-[600px] lg:h-[710px] w-full bg-zinc-500 relative overflow-hidden">
         {images.map((image, index) => (
           <div

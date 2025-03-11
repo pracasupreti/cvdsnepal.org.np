@@ -64,7 +64,7 @@ const More = () => {
                   <h1 className="text-xl font-semibold"> Events Gallery</h1>
                 </div>
     
-                <Link to="gallery" className="w-full">
+                <Link to="/gallery" className="w-full">
                 <div className="grid grid-cols-3 grid-rows-2 text-xl bg-red-200  xl:h-[300px] w-full">
                 <img
                   className="w-full h-full"

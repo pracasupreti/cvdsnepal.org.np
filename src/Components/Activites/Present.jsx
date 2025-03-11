@@ -7,14 +7,14 @@ import More from "../Home/More";
 const Present = () => {
   return (
     <>
-      <div className="bg-[#333333] h-62 xl:h-92 w-full flex items-center justify-center flex-col gap-6 text-white  lg:mt-[240px]">
+      <div className="bg-gray-300 text-[#233a71]   h-62 xl:h-92 w-full flex items-center justify-center flex-col gap-6 mt-20  lg:mt-40">
         <h1 className="text-5xl xl:text-8xl font-bold">Present</h1>
         <div className="flex items-center justify-center  gap-4 text-[22px] font-semibold">
           <p className="hover:text-orange-500">
             <Link to="/">Home</Link>
           </p>
           <FaPlay className="text-[10px]" />
-          <p className="font-light text-gray-300">Present</p>
+          <p className="font-light text-[#233a71] ">Present</p>
           <FaPlay className="text-[10px]" />
           <Link to="/pipeline" className="text-orange-500">
             <p >Pipeline</p>

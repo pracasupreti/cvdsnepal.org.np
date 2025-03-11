@@ -1,56 +1,63 @@
-import React from "react";
-import PageTitle from "../Header/PageTitle";
+import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import PageTitle from '../Header/PageTitle';
 import More from "../Home/More";
-
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
 
 const Gallery = () => {
   const images = [
-    {
-      original: "/imgs/1.jpg", // Main image
-      thumbnail: "/imgs/1.jpg", // Thumbnail
-    },
-  
-    {
-      original: "/imgs/2.jpg",
-      thumbnail: "/imgs/2.jpg",
-    },
-    {
-      original: "/imgs/3.jpg",
-      thumbnail: "/imgs/3.jpg",
-    },
-    {
-      original: "/imgs/4.jpg",
-      thumbnail: "/imgs/4.jpg",
-    },
-    {
-      original: "/imgs/slide-1.jpg",
-      thumbnail: "/imgs/slide-1.jpg",
-    },
-    {
-      original: "/imgs/slide-2.jpg",
-      thumbnail: "/imgs/slide-2.jpg",
-    },
+    // { src: "/imgs/2.jpg" },
+    { src: "public/imgs/i2.png" },
+    { src: "public/imgs/i3.png" },
+    { src: "public/imgs/i1.png" },
+    { src: "/imgs/3.jpg" },
+    { src: "/imgs/4.jpg" },
+    { src: "/imgs/slide-1.jpg" },
+    { src: "/imgs/slide-2.jpg" },
+    { src: "/imgs/index-1.jpg" },
+        { src: "/imgs/1.jpg" },
+
+
   ];
 
-  return (
-    <>
-      <PageTitle page="Gallery" title="Gallery" />
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
 
-      <div className=" overflow-hidden object-cover">
-        <ImageGallery
-          showFullscreenButton={false} // Enable full-screen mode
-          showPlayButton={false} // Show play button for slideshow
-          showThumbnails={false} // Show thumbnails below
-          autoPlay={true} // Auto-play slideshow
-          slideInterval={3000}
-          items={images}
-          
-        />
+  return (
+
+
+    <>
+     <PageTitle page="Gallery" title="Gallery" />
+    
+    
+   
+    <div className="container mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
+        {images.map((img, i) => (
+          <img
+            key={i}
+            src={img.src}
+            alt={`Gallery ${i + 1}`}
+            className="w-full h-[400px] object-cover rounded-lg cursor-pointer shadow-md "
+            loading="lazy"
+            onClick={() => {
+              setIndex(i);
+              setOpen(true);
+            }}
+          />
+        ))}
       </div>
 
-      <More />
+      {/* Lightbox */}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={images}
+        index={index}
+      />
+    </div>
+
+    <More />
     </>
   );
 };

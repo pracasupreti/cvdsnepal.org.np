@@ -48,7 +48,7 @@ const Nav = () => {
         }`}
       >
         {/* Top Section */}
-        <div className="lg:h-20 h-20 w-full border-b-[1px] border-b-[#152447]">
+        <div className="lg:h-20 h-20 w-full lg:border-b-[1px] border-b-[#152447]">
           <div className="lg:container mx-auto h-full w-full flex items-center justify-evenly lg:justify-between ">
             <p
               className={`2xl:text-sm lg:text-[16px] font-semibold hidden lg:flex leading-6 w-[30%] ${
@@ -77,7 +77,7 @@ const Nav = () => {
                 <FaPhone className="text-white text-xl mt-2 lg:hidden" />
               </a>
             </div>
-            <Link to="/" className="lg:h-[75%] h-[55%] sm:h-[50%] lg:w-[60%] sm:w-[20%] w-[30%] mt-[-10px] lg:mt-0">
+            <Link to="/" className="lg:h-[75%] h-[55%] sm:h-[50%] lg:w-[60%] sm:w-[20%] w-[40%] mt-[-10px] lg:mt-0">
               <div className="h-full flex items-center pt-4">
                 <img className="h-full " src="/imgs/logo.png" alt="logo" />
               </div>

@@ -38,7 +38,7 @@ const Gallery = () => {
             key={i}
             src={img.src}
             alt={`Gallery ${i + 1}`}
-            className="w-full h-[400px] object-cover rounded-lg cursor-pointer shadow-md "
+            className="w-full max-h-[400px] lg:h-[400px] object-cover rounded-lg cursor-pointer shadow-md "
             loading="lazy"
             onClick={() => {
               setIndex(i);

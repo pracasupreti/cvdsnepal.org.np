@@ -7,9 +7,9 @@ import More from "../Home/More";
 const Gallery = () => {
   const images = [
     // { src: "/imgs/2.jpg" },
-    { src: "public/imgs/i2.png" },
-    { src: "public/imgs/i3.png" },
-    { src: "public/imgs/i1.png" },
+    { src: "/imgs/i2.png" },
+    { src: "/imgs/i3.png" },
+    { src: "/imgs/i1.png" },
     { src: "/imgs/3.jpg" },
     { src: "/imgs/4.jpg" },
     { src: "/imgs/slide-1.jpg" },

@@ -77,7 +77,7 @@ const Nav = () => {
                 <FaPhone className="text-white text-xl mt-2 lg:hidden" />
               </a>
             </div>
-            <Link to="/" className="lg:h-[75%] h-[45%] sm:h-[50%] lg:w-[60%] sm:w-[20%] w-[30%] mt-[-10px] lg:mt-0">
+            <Link to="/" className="lg:h-[75%] h-[55%] sm:h-[50%] lg:w-[60%] sm:w-[20%] w-[30%] mt-[-10px] lg:mt-0">
               <div className="h-full flex items-center pt-4">
                 <img className="h-full " src="/imgs/logo.png" alt="logo" />
               </div>

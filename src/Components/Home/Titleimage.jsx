@@ -5,7 +5,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const TiltImage = () => {
+const Titleimage = () => {
   return (
     <>
       <div className="xl:flex items-center justify-evenly ">
@@ -151,4 +151,4 @@ const TiltImage = () => {
   );
 };
 
-export default TiltImage;
+export default Titleimage;

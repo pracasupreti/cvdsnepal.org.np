@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router";
 import Aboutus from "../About/Aboutus";
 import Home from "../Home/Home";
-import Member from "../Members/Member";
-import Partner from "../Partners/Partner";
-import Pipeline from "../Activites/Pipeline";
-import Objective from "../Objectives/Objective";
-import Support from "../Supports/Support";
-import Contact from "../Contacts/Contact";
-import Present from "../Activites/Present";
-import Gallery from "../Gallerys/Gallery";
+import Member from "../Member/Member";
+import Partner from "../Partner/Partner";
+import Pipeline from "../Activite/Pipeline";
+import Objective from "../Objective/Objective";
+import Support from "../Support/Support";
+import Contact from "../Contact/Contact";
+import Present from "../Activite/Present";
+import Gallery from "../Gallery/Gallery";
 import { useLocation } from "react-router-dom";
 
 const TitleUpdater = () => {

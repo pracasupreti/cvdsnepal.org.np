@@ -11,6 +11,7 @@ import Contact from "../Contact/Contact";
 import Present from "../Activite/Present";
 import Gallery from "../Gallery/Gallery";
 import { useLocation } from "react-router-dom";
+import BlockPage from "../Singleblockpage/BlockPage";
 
 const TitleUpdater = () => {
   const routesWithTitles = {
@@ -49,6 +50,7 @@ const Routing = () => {
         <Route path="/support" element={<Support />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blockpage" element={<BlockPage />} />
       </Routes>
     </>
   );

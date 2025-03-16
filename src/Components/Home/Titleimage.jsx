@@ -53,7 +53,32 @@ const Titleimage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  bg-gray-200 mt-80">
+      <div className="container mx-auto mt-90  flex items-center justify-center gap-10 ">
+        <div className="w-[40%]">
+          <h1 className="text-5xl font-semibold">Living in Dubai</h1>
+          <p className="mt-8 text-lg">
+            Citizens, residents, and anyone looking to move to Dubai will find
+            an overview of key services required to make the most of the city's
+            multicultural, business-friendly, and safe environment.
+          </p>
+          <p className="mt-4 text-lg">
+            Within this section, information and services about aspects of life
+            in Dubai, including health, education, family affairs, security, and
+            activities, are available. Dubai.ae facilitates a seamless
+            connection to specialized channels, ensuring direct and accurate
+            access to essential details from government service providers.
+          </p>
+        </div>
+        <div className="">
+        <div className=" grid grid-cols-2 gap-4">
+        <img src="/images/i8.png" alt="Family in Dubai" className="rounded-lg w-82 object-cover" />
+        <img src="/images/i10.png" alt="Dubai Sunset" className="rounded-lg w-82 object-cover" />
+        <img src="/images/i11.png" alt="Dubai Bridge" className="rounded-lg w-82 object-cover" />
+        <img src="/images/i9.png" alt="Happy Family" className="rounded-lg w-82 object-cover" />
+      </div>
+        </div>
+      </div>
+      <div className="w-full  bg-gray-200 mt-10">
         <div className="w-full h-full  container mx-auto flex-col flex xl:flex-row gap-20 xl:gap-0 justify-between bg-gray-200 pt-30 pb-30">
           <div className="flex flex-col items-start justify-between w-full xl:w-1/3 text-justify gap-6 px-6 lg:px-0">
             <div className=" flex items-center justify-center gap-4">

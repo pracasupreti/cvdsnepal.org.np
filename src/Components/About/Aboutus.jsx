@@ -5,8 +5,27 @@ import {
   IoIosCheckmarkCircleOutline,
 } from "react-icons/io";
 import More from "../Home/More";
+import { ArrowUpRight } from "lucide-react";
 
 const Aboutus = () => {
+  const initiatives = [
+    {
+      title: "Museum of the Future",
+      image: "/images/i5.png",
+    },
+    {
+      title: "35 of UAE's leading space projects",
+      image: "/images/i9.png",
+    },
+    {
+      title: "Dubai Centre for Artificial Intelligence",
+      image: "/images/i10.png",
+    },
+    {
+      title: "Dubai Metaverse Assembly",
+      image: "/images/i11.png",
+    },
+  ];
   return (
     <div>
       <PageTitle page="About" title="Who We Are" />
@@ -32,6 +51,42 @@ const Aboutus = () => {
             that they do not fit in the society like other able-bodied children.
           </p>
         </div>
+         <div className="container mx-auto  mt-20">
+                <h1 className="text-5xl font-bold text-center mb-10">
+                  Digitalizing Life in Dubai
+                </h1>
+        
+                <p className="text-center text-lg max-w-5xl mx-auto mb-3 ">
+                  Key initiatives designed by using emerging technologies and the most
+                  advanced digital solutions to maintain people's wellbeing, conserve
+                  the natural resources, and boost the city's competitive position in
+                  the digital transformation journey.
+                </p>
+        
+                <div className="flex justify-center mb-12">
+                  <a
+                    href="#"
+                    className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
+                  >
+                    View Dubai's Strategy for Digital Transformation
+                    <ArrowUpRight size={16} className="ml-1" />
+                  </a>
+                </div>
+        
+                <div className="flex justify-center gap-10">
+                  {initiatives.map((initiative, index) => (
+                    <div key={index} className="flex flex-col w-74">
+                      <div className="w-74 overflow-hidden mb-3">
+                        <img
+                          src={initiative.image}
+                          className="h-74 w-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-2xl font-semibold">{initiative.title}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
         <p className="text-justify sm:text-xl text-sm font-extralight sm:leading-9 leading-6 mt-2 ">
           Thus, it becomes a painful reality how there is limited involvement or
           we can find no involvement of their parents or guardians in

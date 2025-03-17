@@ -12,6 +12,7 @@ import {
 } from "react-icons/io";
 import { GrLinkedin, GrMoney } from "react-icons/gr";
 import {
+  FaArrowRight,
   FaBook,
   FaCheckCircle,
   FaFacebook,
@@ -247,8 +248,7 @@ const BlockPage = () => {
     {
       id: 1,
       imageSrc: "/images/i18.png",
-      caption:
-      "Istanbul 10k & Full Marathon"
+      caption: "Istanbul 10k & Full Marathon",
     },
     {
       id: 2,
@@ -275,8 +275,6 @@ const BlockPage = () => {
   };
 
   const currentChallenge = challenge[currentInd];
-
-
 
   return (
     <>
@@ -598,22 +596,6 @@ const BlockPage = () => {
             <p className="px-5 font-medium">
               Funding an Annual Scholarship ensures that a deserving student
               will be recognized and rewarded.
-            </p>
-            <a
-              className="bg-orange-500 w-full mt-4 text-center p-3 text-white text-2xl font-medium"
-              href=""
-            >
-              Donate Now
-            </a>
-          </div>
-          <div className="w-92 pt-5 border-dashed border-1 rounded-2xl overflow-hidden flex flex-col items-center justify-between shrink-0">
-            <div className="overflow-hidden rounded-t-2xl">
-              <img className="w-full" src="/images/i5.png" alt="" />
-            </div>
-            <h1 className="text-2xl font-semibold my-3 ">Sponsor a Youth</h1>
-            <p className="px-5 font-medium">
-              Donate Now Your contribution sponsors training and skill
-              development of a Youth.
             </p>
             <a
               className="bg-orange-500 w-full mt-4 text-center p-3 text-white text-2xl font-medium"
@@ -1514,38 +1496,455 @@ const BlockPage = () => {
       </div>
 
       {/* Get involved with a challenge  */}
-     
+
       <div className="container mx-auto px-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-start mt-20">
         <div className="pr-14">
           <h2 className="text-6xl font-bold text-orange-600 mb-8">
             Get involved with a challenge...
           </h2>
           <p className="text-2xl mb-6">
-            Make a difference beyond donating — support Palestinians in Gaza with your time and effort!
+            Make a difference beyond donating — support Palestinians in Gaza
+            with your time and effort!
           </p>
           <p className="text-2xl mb-6">
-            Join our fundraising challenges to raise vital funds for Gaza and greatly raise awareness of the hardships
-            children and families in Gaza face.
+            Join our fundraising challenges to raise vital funds for Gaza and
+            greatly raise awareness of the hardships children and families in
+            Gaza face.
           </p>
-          <button className="border border-orange-600 text-orange-600 py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition">
+          <button className=" cursor-pointer border border-orange-600 text-orange-600 py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition">
             Get Involved
           </button>
         </div>
-        
+
         <div className="relative h-124  pb-4">
           <div className="bg-gray-100 shadow-lg rounded-lg overflow-hidden  w-xl p-2 h-110">
-            <img 
-             src={currentChallenge.imageSrc}
-              alt="Marathon Event" 
+            <img
+              src={currentChallenge.imageSrc}
+              alt="Marathon Event"
               className="w-full h-82 object-cover"
             />
             <div className="text-center py-4">
-              <h3 className="text-3xl px-20 font-bold text-orange-600">{currentChallenge.caption}</h3>
+              <h3 className="text-3xl px-20 font-bold text-orange-600">
+                {currentChallenge.caption}
+              </h3>
             </div>
           </div>
           <div className="absolute bottom-0 right-22 flex gap-4 text-xl">
-            <button onClick={goPrevious} className="bg-orange-600 text-white px-4 py-2 rounded-md">&lt;</button>
-            <button onClick={goNext} className="bg-orange-600 text-white px-4 py-2 rounded-md">&gt;</button>
+            <button
+              onClick={goPrevious}
+              className="bg-orange-600 text-white px-4 py-2 rounded-md cursor-pointer"
+            >
+              &lt;
+            </button>
+            <button
+              onClick={goNext}
+              className="bg-orange-600 text-white px-4 py-2 rounded-md cursor-pointer"
+            >
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* we are changing lives  */}
+      <div className="container mx-auto px-20 mt-10 text-center">
+        <h1 className="text-5xl font-bold text-orange-500 mb-6">
+          We are changing lives for the better in Gaza
+        </h1>
+        <p className="text-xl w-4xl mx-auto mb-8">
+          We are helping people across Gaza to build productive, safe and
+          self-sufficient communities. Learn about how we do this in the pages
+          below.
+        </p>
+        <div className="flex justify-center gap-14 w-6xl mx-auto">
+          <div className="w-92  shadow-2xl text-left ">
+            <img
+              className="w-full h-82 object-cover"
+              src="/images/i14.png"
+              alt=""
+            />
+
+            <div className="px-6 py-4 ">
+              <h1 className="text-2xl font-bold text-orange-500">
+                Gaza Relief Programme
+              </h1>
+              <p className="text-lg">
+                The siege has devastated Gaza; you can be part of the relief
+                effort.
+              </p>
+            </div>
+          </div>
+          <div className="w-92  shadow-2xl text-left ">
+            <img
+              className="w-full h-82 object-cover"
+              src="/images/i15.png"
+              alt=""
+            />
+
+            <div className="px-6 py-4 ">
+              <h1 className="text-2xl font-bold text-orange-500">
+                Medical Aid
+              </h1>
+              <p className="text-lg">
+                The Gaza Strip's medical sector is at breaking point; be a
+                lifeline for Gaza.
+              </p>
+            </div>
+          </div>
+          <div className="w-92  shadow-2xl text-left ">
+            <img
+              className="w-full h-82 object-cover"
+              src="/images/i16.png"
+              alt=""
+            />
+
+            <div className="px-6 py-4 ">
+              <h1 className="text-2xl font-bold text-orange-500">
+                Child Sponsorship
+              </h1>
+              <p className="text-lg">
+                Bring hope for a better future; sponsor a child in Gaza today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* take part in challenge */}
+      <div className="container mx-auto px-20 mt-10">
+        <h1 className="text-4xl font-bold text-orange-500 mb-6 w-6xl mx-auto">
+          Take part in a Challenge
+        </h1>
+        <div className="flex justify-between w-6xl mx-auto">
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-lg p-4 ">
+            <img
+              src="/images/i18.png"
+              alt="Marathon Event"
+              className="w-full h-82 object-cover"
+            />
+            <div className="text-left py-4">
+              <h3 className="text-2xl px-6 font-bold text-orange-600">
+                Istanbul 10k & Full Marathon
+              </h3>
+            </div>
+          </div>
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-lg p-4 ">
+            <img
+              src="/images/i17.png"
+              alt="Marathon Event"
+              className="w-full h-82 object-cover"
+            />
+            <div className="text-left py-4">
+              <h3 className="text-2xl px-6 font-bold text-orange-600">
+                Make your own Ramadan Lantern
+              </h3>
+            </div>
+          </div>
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-lg p-4 ">
+            <img
+              src="/images/i16.png"
+              alt="Marathon Event"
+              className="w-full h-82 object-cover"
+            />
+            <div className="text-left py-4">
+              <h3 className="text-2xl px-6 font-bold text-orange-600">
+                Walk For Gaza Virtual Ramadan Challenge 2025
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Other ways to Get Involved */}
+      <div className="container mx-auto px-20 mt-20 flex justify-center ">
+        <h1 className="text-3xl w-42 font-bold text-orange-500 mt-6 ">
+          Other ways to Get Involved
+        </h1>
+        <div className="flex justify-center gap-10 w-5xl">
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-72 ">
+            <img
+              src="/images/i17.png"
+              alt="Marathon Event"
+              className="w-full h-72 object-cover"
+            />
+            <div className="text-left py-4 px-6">
+              <h3 className="text-2xl  font-bold text-orange-600">
+                Include a gift in your will
+              </h3>
+              <p className="text-sm">
+                Leave a lasting legacy, with a gift to Palestine in your will.
+              </p>
+            </div>
+          </div>
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-72 ">
+            <img
+              src="/images/i15.png"
+              alt="Marathon Event"
+              className="w-full h-72 object-cover"
+            />
+            <div className="text-left py-4 px-6">
+              <h3 className="text-2xl  font-bold text-orange-600">
+                Gift Aid your donations{" "}
+              </h3>
+              <p className="text-sm">
+                Increase your donation by 25% at no extra cost to you.{" "}
+              </p>
+            </div>
+          </div>
+          <div className=" shadow-2xl rounded-lg overflow-hidden  w-72 ">
+            <img
+              src="/images/i14.png"
+              alt="Marathon Event"
+              className="w-full h-72 object-cover"
+            />
+            <div className="text-left py-4 px-6">
+              <h3 className="text-2xl  font-bold text-orange-600">
+                Make a donation{" "}
+              </h3>
+              <p className="text-sm">
+                Short on time? Help us with a donation.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* History */}
+      <div className="container mx-auto px-20 mt-20">
+        <h1 className="text-4xl">History</h1>
+        <div className="flex justify-between mt-10">
+          <p className="text-lg">
+            Learn about people and places from the past and discover remarkable
+            works of art, architecture and gardens.
+          </p>
+          <a
+            className="rounded-4xl text-lg border-1 w-52 p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            More History
+            <FaArrowRight className="text-xl" />
+          </a>
+        </div>
+        <div className="flex justify-between mt-10">
+          <div className="w-76 border-1 border-gray-300">
+            <div className="w-full h-62 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                Great women gardeners →
+              </h1>
+              <p className="text-sm mt-2">
+                Learn about pioneering women gardeners from Edith, Lady
+                Londonderry's rare plants and symbolism, to Kitty Lloyd Jones,
+                one of the first women to train as a professional
+                horticulturalist.
+              </p>
+            </div>
+          </div>
+          <div className="w-76 border-1 border-gray-300">
+            <div className="w-full h-62 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">What is a Dovecote? →</h1>
+              <p className="text-sm mt-2">
+                Dovecotes were built by wealthy and aristocratic families from
+                the Norman period onwards and doves were kept for both food,
+                feathers and as status symbols.
+              </p>
+            </div>
+          </div>
+          <div className="w-76 border-1 border-gray-300">
+            <div className="w-full h-62 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                Spring scenes in our collections →
+              </h1>
+              <p className="text-sm mt-2">
+                Spring's promise of new beginnings has been an inspiration to
+                artists and designers for centuries. Discover spring through
+                some of its most evocative depictions in the collections and
+                objects we care for.
+              </p>
+            </div>
+          </div>
+          <div className="w-76 border-1 border-gray-300">
+            <div className="w-full h-62 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                The history of daffodils →
+              </h1>
+              <p className="text-sm mt-2">
+                Explore the history behind the daffodil, including how it came
+                to be one of the UK's favourite flowers, where it came from and
+                how to classify its many varieties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Crafts */}
+      <div className="container mx-auto px-20 mt-20">
+        <h1 className="text-4xl">Crafts</h1>
+        <div className="flex justify-between mt-10">
+          <p className="text-lg">
+            Learn about people and places from the past and discover remarkable
+            works of art, architecture and gardens.
+          </p>
+          <a
+            className="rounded-4xl text-lg border-1 w-52 p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            More Crafts
+            <FaArrowRight className="text-xl" />
+          </a>
+        </div>
+        <div className="flex justify-between mt-10">
+          <div className="w-2xl border-1 border-gray-300">
+            <div className="w-full h-102 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                Great women gardeners →
+              </h1>
+              <p className="text-sm mt-2">
+                Learn about pioneering women gardeners from Edith, Lady
+                Londonderry's rare plants and symbolism, to Kitty Lloyd Jones,
+                one of the first women to train as a professional
+                horticulturalist.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-2xl justify-between gap-4">
+            <div className="w-sm border-1 border-gray-300">
+              <div className="w-full h-62 relative">
+                <img
+                  src="/images/i10.png"
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+                <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                  Article
+                </span>
+              </div>
+              <div className="p-4">
+                <h1 className="text-2xl tracking-wider">
+                  What is a Dovecote? →
+                </h1>
+                <p className="text-sm mt-2">
+                  Dovecotes were built by wealthy and aristocratic families from
+                  the Norman period onwards and doves were kept for both food,
+                  feathers and as status symbols.
+                </p>
+              </div>
+            </div>
+            <div className="w-sm border-1 border-gray-300">
+              <div className="w-full h-62 relative">
+                <img
+                  src="/images/i10.png"
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+                <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                  Article
+                </span>
+              </div>
+              <div className="p-4">
+                <h1 className="text-2xl tracking-wider">
+                  Spring scenes in our collections →
+                </h1>
+                <p className="text-sm mt-2">
+                  Spring's promise of new beginnings has been an inspiration to
+                  artists and designers for centuries. Discover spring through
+                  some of its most evocative depictions in the collections and
+                  objects we care for.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* plan your holidays */}
+      <div className="container mx-auto px-20 mt-20">
+        <h1 className="text-4xl">Plan your holidays</h1>
+        <div className="flex justify-between mt-10">
+          <p className="text-lg">
+            Look forward to a break at one of the places in our care in 2025.
+            The money you spend on your holiday helps us preserve and bring new
+            life to special places across England, Wales and Northern Ireland.
+          </p>
+          <a
+            className="rounded-4xl text-lg border-1 w-72 p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            Search holidays
+            <FaArrowRight className="text-xl" />
+          </a>
+        </div>
+        <div className="flex justify-between mt-10">
+          <div className="w-6xl flex">
+            <div className="w-full h-102 ">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="p-6 border-1 border-gray-200 ">
+            <span className="text-lg font-medium  bg-white z-200 border-1  px-2 uppercase">
+              Article
+            </span>
+            <h1 className="text-2xl tracking-wider mb-6 mt-6">
+              Easter holiday breaks →
+            </h1>
+            <p className="text-sm mt-2">
+              Discover Easter weekend breaks from Good Friday to Easter Monday,
+              as well as longer breaks for the whole family over the two week
+              school holiday. Image: Cymryd, Conwy
+            </p>
           </div>
         </div>
       </div>

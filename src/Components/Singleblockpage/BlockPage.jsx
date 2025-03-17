@@ -19,6 +19,7 @@ import {
   FaHandHoldingMedical,
   FaHandHoldingUsd,
   FaInstagramSquare,
+  FaQuoteLeft,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
@@ -188,33 +189,56 @@ const BlockPage = () => {
     {
       category: "Aid Funding Crisis",
       title: "U.S. aid cuts put millions in peril",
-      link: "#"
+      link: "#",
     },
     {
       category: "International Women's Day",
       title: "12 women activists and leaders making the world a better place",
-      link: "#"
+      link: "#",
     },
     {
       category: "Healing Classrooms",
       title: "5 ways to support students during the holy month of Ramadan",
-      link: "#"
+      link: "#",
     },
     {
       category: "Ukraine",
       title: "What's happening in Ukraine now, and how to help",
-      link: "#"
+      link: "#",
     },
     {
       category: "Ukraine crisis",
       title: "Three years on: Ukrainians show what the war has taken from them",
-      link: "#"
+      link: "#",
     },
     {
       category: "Emergency Watchlist",
       title: "What's happening in DRC, and how to help",
-      link: "#"
-    }
+      link: "#",
+    },
+  ];
+  const helpOptions = [
+    {
+      id: 1,
+      title: "Donate today",
+      image: "/images/i7.png",
+      description:
+        "The IRC works in over 40 crisis-affected countries, helping people to rebuild their lives. You can help support our work by donating today.",
+    },
+    {
+      id: 2,
+      title: "Play our lottery",
+      image: "/images/i12.png",
+      description:
+        "You'll have the chance to win over 40 cash prizes every week including our £500 jackpot. Plus, you'll be supporting refugees every time you play.",
+    },
+    {
+      id: 3,
+      title: "Host an event",
+      image: "/images/i11.png",
+      description:
+        "From wine and cheese nights to civilised coffee mornings, there are lots of ways to raise lifesaving funds while having fun with your friends, colleagues or family.",
+    },
   ];
 
   return (
@@ -227,14 +251,14 @@ const BlockPage = () => {
 
         <div className="mt-20">
           <Swiper
-          className=""
+            className=""
             spaceBetween={10}
             slidesPerView={6}
             navigation={true}
-            loop = {true}
+            loop={true}
             modules={[Navigation]}
           >
-            <SwiperSlide >
+            <SwiperSlide>
               <div className="  h-32">
                 <img
                   className="h-full w-full object-contain"
@@ -358,14 +382,12 @@ const BlockPage = () => {
             across Bangalore, Tumkur, Ladakh and Bihar.
           </p>
           <button className="uppercase mt-20 text-sm font-stretch-200% tracking-widest cursor-pointer text-lime-600 font-bold">
-
             Know more
           </button>
-
         </div>
       </div>
       {/* common question */}
-      
+
       <div className="container mx-auto px-50">
         <h1 className="text-center mt-10 text-[40px]  font-semibold font-serif tracking-wider ">
           Common Questions
@@ -454,24 +476,29 @@ const BlockPage = () => {
             <div className="h-50 rounded-[50%] overflow-hidden">
               <img className="h-full" src="/images/i2.png" alt="" />
             </div>
-            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">70,000+</h1>
+            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">
+              70,000+
+            </h1>
             <h1 className="text-lg font-medium ">Upskillded and Employed</h1>
           </div>
           <div className="flex flex-col  items-center  gap-3">
             <div className="h-50 rounded-[50%] overflow-hidden">
               <img className="h-full" src="/images/i3.png" alt="" />
             </div>
-            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">100+</h1>
+            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">
+              100+
+            </h1>
             <h1 className="text-lg font-medium ">No. of Recruiters</h1>
           </div>
           <div className="flex flex-col  items-center  gap-3">
             <div className="h-50 rounded-[50%] overflow-hidden">
               <img className="h-full" src="/images/i4.png" alt="" />
             </div>
-            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">4+</h1>
+            <h1 className="text-orange-600 text-4xl font-semibold tracking-wider">
+              4+
+            </h1>
             <h1 className="text-lg font-medium ">No. of Sectors</h1>
           </div>
-         
         </div>
       </div>
       {/* get involded */}
@@ -488,7 +515,10 @@ const BlockPage = () => {
           </a>
         </div>
 
-        <div className="mt-20 flex justify-evenly  gap-8 overflow-hidden relative overflow-x-scroll scrollbar-hide " ref={scrollRef}>
+        <div
+          className="mt-20 flex justify-evenly  gap-8 overflow-hidden relative overflow-x-scroll scrollbar-hide "
+          ref={scrollRef}
+        >
           <div className="w-92 pt-5 border-dashed border-1 rounded-2xl overflow-hidden flex flex-col items-center justify-between shrink-0">
             <div className="overflow-hidden rounded-t-2xl">
               <img className="w-full" src="/images/i5.png" alt="" />
@@ -511,7 +541,8 @@ const BlockPage = () => {
             </div>
             <h1 className="text-2xl font-semibold my-3 ">Corpus Fund</h1>
             <p className="px-5 font-medium">
-            UNNATI needs your contributions to keep the hope burning bright students.
+              UNNATI needs your contributions to keep the hope burning bright
+              students.
             </p>
             <a
               className="bg-orange-500 w-full mt-4 text-center p-3 text-white text-2xl font-medium"
@@ -524,9 +555,12 @@ const BlockPage = () => {
             <div className="overflow-hidden rounded-t-2xl">
               <img className="w-full" src="/images/i5.png" alt="" />
             </div>
-            <h1 className="text-2xl font-semibold my-3 ">Sponsoring a Scholarship</h1>
+            <h1 className="text-2xl font-semibold my-3 ">
+              Sponsoring a Scholarship
+            </h1>
             <p className="px-5 font-medium">
-            Funding an Annual Scholarship ensures that a deserving student will be recognized and rewarded.
+              Funding an Annual Scholarship ensures that a deserving student
+              will be recognized and rewarded.
             </p>
             <a
               className="bg-orange-500 w-full mt-4 text-center p-3 text-white text-2xl font-medium"
@@ -552,7 +586,10 @@ const BlockPage = () => {
             </a>
           </div>
         </div>
-        <button className=" absolute right-[16%] top-[50%] z-200 "   onClick={scrollRight}>
+        <button
+          className=" absolute right-[16%] top-[50%] z-200 "
+          onClick={scrollRight}
+        >
           <IoIosArrowDropright className="text-6xl text-orange-600" />
         </button>
       </div>
@@ -629,7 +666,6 @@ const BlockPage = () => {
               Priority Services
             </h1>
           </div>
-      
         </div>
       </div>
       {/* UAE Pass */}
@@ -689,7 +725,9 @@ const BlockPage = () => {
       {/* personalized and cohensive user experience */}
       <div className="container mx-auto mt-20 flex items-start justify-center gap-20">
         <div className="w-[40%] flex flex-col gap-10">
-          <h1 className="text-3xl font-medium">Personalised and cohesive user experience</h1>
+          <h1 className="text-3xl font-medium">
+            Personalised and cohesive user experience
+          </h1>
           <p className="text-[17px] ">
             The UAE has introduced a Design Language System (DLS) and other
             guidelines, principles and policies for designing government portals
@@ -704,7 +742,9 @@ const BlockPage = () => {
             mark their favourite or most used online services.
           </p>
 
-          <p className="text-[17px]">Read how to use government eServices through this guide.</p>
+          <p className="text-[17px]">
+            Read how to use government eServices through this guide.
+          </p>
           <p className="text-[17px]">
             Services are accessible for people of determination. Read about live
             support about public services for people of determination.
@@ -772,10 +812,10 @@ const BlockPage = () => {
               height="400"
               src="https://www.youtube.com/embed/eHPJNC0E0NU?si=i1j5es2ekJ5llOKJ"
               title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
           <div className=" h-[400px] w-[500px]">
@@ -820,12 +860,28 @@ const BlockPage = () => {
           </p>
         </div>
         <div className="">
-        <div className=" grid grid-cols-2 gap-4">
-        <img src="/images/i8.png" alt="Family in Dubai" className="rounded-lg w-82 object-cover" />
-        <img src="/images/i10.png" alt="Dubai Sunset" className="rounded-lg w-82 object-cover" />
-        <img src="/images/i11.png" alt="Dubai Bridge" className="rounded-lg w-82 object-cover" />
-        <img src="/images/i9.png" alt="Happy Family" className="rounded-lg w-82 object-cover" />
-      </div>
+          <div className=" grid grid-cols-2 gap-4">
+            <img
+              src="/images/i8.png"
+              alt="Family in Dubai"
+              className="rounded-lg w-82 object-cover"
+            />
+            <img
+              src="/images/i10.png"
+              alt="Dubai Sunset"
+              className="rounded-lg w-82 object-cover"
+            />
+            <img
+              src="/images/i11.png"
+              alt="Dubai Bridge"
+              className="rounded-lg w-82 object-cover"
+            />
+            <img
+              src="/images/i9.png"
+              alt="Happy Family"
+              className="rounded-lg w-82 object-cover"
+            />
+          </div>
         </div>
       </div>
 
@@ -916,12 +972,7 @@ const BlockPage = () => {
           {requirements.map((requirement, index) => (
             <div key={index} className="flex items-start">
               <div>
-
-              
-              <FaCheckCircle
-                className="mr-3 mt-1 "
-                size={24}
-              />
+                <FaCheckCircle className="mr-3 mt-1 " size={24} />
               </div>
               <p className="text-xl">{requirement}</p>
             </div>
@@ -1004,16 +1055,20 @@ const BlockPage = () => {
       {/* crisis in sudan */}
 
       <div className="container mx-auto mt-20 flex items-center justify-center gap-10">
-       
         <div className="w-152 h-154 relative">
           <div className="w-full h-92 overflow-hidden">
             <img className="w-full h-full" src="images/i12.png" alt="" />
           </div>
           <div className="bg-neutral-100 h-62 w-132 z-20 absolute bottom-14 left-10 flex flex-col p-8 gap-5 ">
             <p className="text-[16px] font-medium">Emergency Watchlist</p>
-            <h1 className="text-3xl font-bold font-serif">Crisis in Sudan: What is happening and how to help</h1>
+            <h1 className="text-3xl font-bold font-serif">
+              Crisis in Sudan: What is happening and how to help
+            </h1>
             <a href="">
-              <span className="text-xl font-bold border-b-3 border-amber-400"> Learn more</span>
+              <span className="text-xl font-bold border-b-3 border-amber-400">
+                {" "}
+                Learn more
+              </span>
             </a>
           </div>
         </div>
@@ -1023,13 +1078,16 @@ const BlockPage = () => {
           </div>
           <div className="bg-neutral-100 h-62 w-132 z-20 absolute bottom-14 left-10 flex flex-col p-8 gap-5 ">
             <p className="text-[16px] font-medium">What we do</p>
-            <h1 className="text-3xl font-bold font-serif">What is humanitarian aid and why is it important?</h1>
+            <h1 className="text-3xl font-bold font-serif">
+              What is humanitarian aid and why is it important?
+            </h1>
             <a href="">
-              <span className="text-xl font-bold border-b-3 border-amber-400">Learn more about what we do</span>
+              <span className="text-xl font-bold border-b-3 border-amber-400">
+                Learn more about what we do
+              </span>
             </a>
           </div>
         </div>
-       
       </div>
 
       {/* crisis watch footer */}
@@ -1114,7 +1172,9 @@ const BlockPage = () => {
           </button>
         </div>
         <div className="  w-132">
-          <h3 className="text-black font-medium mb-8 text-lg">Join our mailing list</h3>
+          <h3 className="text-black font-medium mb-8 text-lg">
+            Join our mailing list
+          </h3>
           <p className="text-[16px] leading-7 mb-2">
             Get the latest news about the IRC's innovative programmes,
             compelling stories about our clients and how you can make a
@@ -1184,10 +1244,76 @@ const BlockPage = () => {
             <div key={index} className="border-b-2 border-gray-200 pb-6">
               <a href={story.link} className="block hover:opacity-80">
                 <p className="text-gray-700 text-lg mb-1">{story.category}</p>
-                <h3 className="text-xl font-extrabold text-black">{story.title}</h3>
+                <h3 className="text-xl font-extrabold text-black">
+                  {story.title}
+                </h3>
               </a>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Ways you can help */}
+
+      <div className="container mx-auto px-20  mt-15">
+        <div className="flex items-center mb-8">
+          <div className="w-[6px] h-16 bg-yellow-400 mr-4"></div>
+          <h2 className="text-4xl font-extrabold font-sans tracking-tighter">
+            Crises the world can't ignore
+          </h2>
+        </div>
+
+        <div className="flex items-center justify-center gap-10">
+          {helpOptions.map((crisis) => (
+            <div
+              key={crisis.id}
+              className="bg-white relative h-102 overflow-hidden"
+            >
+              <div className="h-64 overflow-hidden w-112">
+                <img
+                  src={crisis.image}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className=" absolute left-3 bottom-0 z-20 p-6 border-b-6 border-yellow-400 bg-gray-100 w-102 h-42">
+                <div className="flex justify-between items-center mb-6">
+                  <h3 className="text-xl font-extrabold">{crisis.title}</h3>
+                  <ChevronRight className="" />
+                </div>
+                <p className="text-xl">{crisis.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Thank you supporters  */}
+
+      <div className="container mx-auto px-20  mt-15">
+        <div className="flex items-center mb-8">
+          <div className="w-[6px] h-16 bg-yellow-400 mr-4"></div>
+          <h2 className="text-4xl font-extrabold font-sans tracking-tighter">
+            Thank you to our inspiring supporters{" "}
+          </h2>
+        </div>
+        <div className=" w-full h-92 relative">
+          <div className="h-82 w-102">
+            <img className="h-full w-full object-cover" src="/images/i13.png" alt="" />
+          </div>
+          <div className="h-72 w-5xl bg-gray-100 z-20 absolute right-5 top-14 px-20 py-15 flex gap-10">
+            <FaQuoteLeft className="text-6xl text-yellow-400" />
+            <div className="py-4">
+              <p className="text-xl  leading-10">
+                On behalf of the International Rescue Committee, I offer
+                heartfelt thanks for your support. By standing with us, you show
+                that you are here for humanity.
+              </p>
+              <h1 className="text-xl font-extrabold mt-2">David Miliband</h1>
+              <p className="text-lg">
+                President and CEO of the International Rescue Committee
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

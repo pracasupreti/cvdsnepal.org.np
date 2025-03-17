@@ -241,6 +241,43 @@ const BlockPage = () => {
     },
   ];
 
+  const [currentInd, setCurrentInd] = useState(0);
+
+  const challenge = [
+    {
+      id: 1,
+      imageSrc: "/images/i18.png",
+      caption:
+      "Istanbul 10k & Full Marathon"
+    },
+    {
+      id: 2,
+      imageSrc: "/images/i8.png",
+      caption: "Second image description here.",
+    },
+    {
+      id: 2,
+      imageSrc: "/images/i10.png",
+      caption: "Second image description here.",
+    },
+  ];
+
+  const goPrevious = () => {
+    const isFirstSlide = currentInd === 0;
+    const newIndex = isFirstSlide ? challenge.length - 1 : currentInd - 1;
+    setCurrentInd(newIndex);
+  };
+
+  const goNext = () => {
+    const isLastSlide = currentInd === challenge.length - 1;
+    const newIndex = isLastSlide ? 0 : currentInd + 1;
+    setCurrentInd(newIndex);
+  };
+
+  const currentChallenge = challenge[currentInd];
+
+
+
   return (
     <>
       {/* partners and sponsors */}
@@ -1253,7 +1290,7 @@ const BlockPage = () => {
         </div>
       </div>
 
-      {/* Ways you can help */}
+      {/* Crises the world can't ignore */}
 
       <div className="container mx-auto px-20  mt-15">
         <div className="flex items-center mb-8">
@@ -1298,7 +1335,11 @@ const BlockPage = () => {
         </div>
         <div className=" w-full h-92 relative">
           <div className="h-82 w-102">
-            <img className="h-full w-full object-cover" src="/images/i13.png" alt="" />
+            <img
+              className="h-full w-full object-cover"
+              src="/images/i13.png"
+              alt=""
+            />
           </div>
           <div className="h-72 w-5xl bg-gray-100 z-20 absolute right-5 top-14 px-20 py-15 flex gap-10">
             <FaQuoteLeft className="text-6xl text-yellow-400" />
@@ -1313,6 +1354,198 @@ const BlockPage = () => {
                 President and CEO of the International Rescue Committee
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      {/* donate today  */}
+      <div className="container mx-auto px-20  mt-15 bg-gray-100 py-10">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-4xl font-extrabold font-sans tracking-tighter">
+            Donate Today
+          </h2>
+          <button className="mr-10 bg-yellow-400 text-lg text-black font-bold p-4 px-8  rounded float-end">
+            Donate ❤️
+          </button>{" "}
+        </div>
+        <h1 className="text-2xl ">
+          Help provide food, medical care and emergency supplies to people in
+          urgent need.
+        </h1>
+      </div>
+
+      {/* How do floods  */}
+      <div className="container mx-auto mt-20 flex items-center justify-center gap-10">
+        <div className="w-152 h-154 relative">
+          <div className="w-full h-92 overflow-hidden">
+            <img
+              className="w-full h-full object-cover"
+              src="images/i14.png"
+              alt=""
+            />
+          </div>
+          <div className="bg-neutral-100 h-60 w-132 z-20 absolute bottom-14 left-10 flex flex-col p-8 gap-4 ">
+            <p className="text-[16px] font-medium">Floods</p>
+            <h1 className="text-3xl font-bold font-serif">
+              How do floods create humanitarian crises?
+            </h1>
+            <a href="">
+              <span className="text-xl font-bold border-b-3 border-amber-400">
+                {" "}
+                Read the article
+              </span>
+            </a>
+          </div>
+        </div>
+        <div className="w-152 h-154 relative">
+          <div className="w-full h-92 overflow-hidden">
+            <img
+              className="w-full h-full object-cover"
+              src="images/i14.png"
+              alt=""
+            />
+          </div>
+          <div className="bg-neutral-100 h-60 w-132 z-20 absolute bottom-14 left-10 flex flex-col p-8 gap-4 ">
+            <p className="text-[16px] font-medium">Climate Crisis</p>
+            <h1 className="text-3xl font-bold font-serif">
+              12 climate activists inspiring us to fight climate change
+            </h1>
+            <a href="">
+              <span className="text-xl font-bold border-b-3 border-amber-400">
+                Read the article
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 12 women activists */}
+      <div className="container mx-auto px-20 mt-20 relative">
+        <div className="h-122 w-6xl bg-gray-100 overflow-hidden flex items-center">
+          <div className="h-82 w-full flex gap-2 items-center ">
+            <img
+              className="h-full w-58 object-cover "
+              src="/images/i16.png"
+              alt=""
+            />
+            <img
+              className="h-full w-58 object-cover "
+              src="/images/i15.png"
+              alt=""
+            />
+            <img
+              className="h-full w-58 object-cover "
+              src="/images/i16.png"
+              alt=""
+            />
+            <img
+              className="h-full w-58 object-cover "
+              src="/images/i15.png"
+              alt=""
+            />
+            <img
+              className="h-full w-58 object-cover "
+              src="/images/i16.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="h-92 w-lg bg-yellow-300 absolute z-20 right-0 top-16  px-10 py-8">
+          <p className="text-[15px] font-medium">International Women's Day</p>
+          <h1 className="text-4xl leading-10 mt-4 font-sans font-extrabold">
+            12 women activists and leaders making the world a better place
+          </h1>
+          <p className="mt-4 text-[16px] mb-4">
+            From championing refugee rights to advocating for other women, we're
+            celebrating these women leaders who won't wait for change to happen.
+          </p>
+          <a
+            className=" border-b-3 w-52 text-center font-extrabold border-b-white"
+            href=""
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+
+      {/* Related countries */}
+      <div className="container mx-auto px-20  mt-15">
+        <div className="flex items-center mb-8">
+          <div className="w-[6px] h-16 bg-yellow-400 mr-4"></div>
+          <h2 className="text-4xl font-extrabold font-sans tracking-tighter">
+            Related countries
+          </h2>
+        </div>
+
+        <div className="flex items-center justify-center gap-10">
+          <div className="bg-white relative h-62 overflow-hidden">
+            <div className="h-54 overflow-hidden w-92">
+              <img
+                src="images/i17.png"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className=" absolute left-5 bottom-0 z-20 p-6  bg-gray-100 w-82 h-10 flex items-center justify-center text-xl font-bold ">
+              <span>Afghanistan</span>
+            </div>
+          </div>
+          <div className="bg-white relative h-62 overflow-hidden">
+            <div className="h-54 overflow-hidden w-92">
+              <img
+                src="images/i17.png"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className=" absolute left-5 bottom-0 z-20 p-6  bg-gray-100 w-82 h-10 flex items-center justify-center text-xl font-bold ">
+              <span>Ethiopia</span>
+            </div>
+          </div>
+          <div className="bg-white relative h-62 overflow-hidden">
+            <div className="h-54 overflow-hidden w-92">
+              <img
+                src="images/i17.png"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className=" absolute left-5 bottom-0 z-20 p-6  bg-gray-100 w-82 h-10 flex items-center justify-center text-xl font-bold ">
+              <span>Somalia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Get involved with a challenge  */}
+     
+      <div className="container mx-auto px-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-start mt-20">
+        <div className="pr-14">
+          <h2 className="text-6xl font-bold text-orange-600 mb-8">
+            Get involved with a challenge...
+          </h2>
+          <p className="text-2xl mb-6">
+            Make a difference beyond donating — support Palestinians in Gaza with your time and effort!
+          </p>
+          <p className="text-2xl mb-6">
+            Join our fundraising challenges to raise vital funds for Gaza and greatly raise awareness of the hardships
+            children and families in Gaza face.
+          </p>
+          <button className="border border-orange-600 text-orange-600 py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition">
+            Get Involved
+          </button>
+        </div>
+        
+        <div className="relative h-124  pb-4">
+          <div className="bg-gray-100 shadow-lg rounded-lg overflow-hidden  w-xl p-2 h-110">
+            <img 
+             src={currentChallenge.imageSrc}
+              alt="Marathon Event" 
+              className="w-full h-82 object-cover"
+            />
+            <div className="text-center py-4">
+              <h3 className="text-3xl px-20 font-bold text-orange-600">{currentChallenge.caption}</h3>
+            </div>
+          </div>
+          <div className="absolute bottom-0 right-22 flex gap-4 text-xl">
+            <button onClick={goPrevious} className="bg-orange-600 text-white px-4 py-2 rounded-md">&lt;</button>
+            <button onClick={goNext} className="bg-orange-600 text-white px-4 py-2 rounded-md">&gt;</button>
           </div>
         </div>
       </div>

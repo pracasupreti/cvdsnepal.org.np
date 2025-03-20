@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <>
       {/* urgent funding */}
-      <div className="relative min-h-screen w-full bg-gray-50">
+      <div className="relative min-h-screen w-full bg-gray-50 mt-40">
         <div className="h-[85vh] w-full bg-[url(/images/i19.png)] bg-center bg-cover">
           <NavBar />
         </div>

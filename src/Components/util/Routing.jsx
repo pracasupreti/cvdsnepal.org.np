@@ -12,6 +12,7 @@ import Present from "../Activite/Present";
 import Gallery from "../Gallery/Gallery";
 import { useLocation } from "react-router-dom";
 import BlockPage from "../Singleblockpage/BlockPage";
+import HomePage from "../Singleblockpage/HomePage";
 
 const TitleUpdater = () => {
   const routesWithTitles = {
@@ -51,6 +52,7 @@ const Routing = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blockpage" element={<BlockPage />} />
+        <Route path="/homepage" element={<HomePage />} />
       </Routes>
     </>
   );

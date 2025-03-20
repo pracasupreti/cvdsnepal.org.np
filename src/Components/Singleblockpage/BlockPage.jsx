@@ -15,6 +15,8 @@ import {
   FaArrowRight,
   FaBook,
   FaCheckCircle,
+  FaChevronDown,
+  FaChevronUp,
   FaExternalLinkAlt,
   FaFacebook,
   FaFileSignature,
@@ -317,7 +319,17 @@ const BlockPage = () => {
       image: "/images/i12.png",
     },
   ];
+  const question = [
+    "What are the legal structures for social enterprises?",
+    "Is there a difference between a social enterprise and an ethical business?",
+    "How does my business register to become a social enterprise?",
+    "Can charities be social enterprises?",
+  ];
 
+  const [open2, setOpen2] = useState(null);
+  const handleClick2 = (index) => {
+    setOpen2(open2 === index ? null : index);
+  };
 
   return (
     <>
@@ -2231,13 +2243,10 @@ const BlockPage = () => {
         </div>
       </div>
       {/* all about social enterprise */}
-      <div className="container mx-auto px-20  mt-15">
+      <div className="container mx-auto px-20  mt-20">
         <div className="grid grid-cols-3 items-center justify-center gap-6">
           {details.map((crisis) => (
-            <div
-              key={crisis.id}
-              className=" relative h-82 overflow-hidden "
-            >
+            <div key={crisis.id} className=" relative h-82 overflow-hidden ">
               <div className="h-64 overflow-hidden w-112">
                 <img
                   src={crisis.image}
@@ -2253,6 +2262,140 @@ const BlockPage = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* building market for social enterprise */}
+      <div className="container mx-auto px-20 mt-20 flex justify-center gap-20">
+        <div className="w-4xl pt-4">
+          <h1 className="text-5xl mb-10 font-extrabold">
+            Building markets for social enterprise{" "}
+          </h1>
+          <p className="text-xl mb-10">
+            Social enterprise need to find customers and commissioners to
+            purchase or procure from them, which is why a core part of our work
+            is helping build and grow markets for social enterprise across all
+            sectors. Our flagship 'Buy Social Corporate Challenge' demonstrates
+            how impactful business can be if it focuses on purpose as well as
+            profit, working with some of the country's largest businesses to
+            help them bring social enterprises into their supply chains.
+          </p>
+          <p className="text-xl mb-10">
+            We are also working with key partners to help shift the narrative on
+            procurement through programmes such as Social Value 2032, which aims
+            to embed social and environmental considerations into all public
+            sector, and more private sector, spending.
+          </p>
+          <div className="flex flex-col items-start ">
+            <a
+              className="text-blue-900   font-semibold text-sm flex items-center justify-center gap-4  "
+              href=""
+            >
+              BUY SOCIAL CORPORATE CHALLENGE{" "}
+              <FaArrowRight className="text-xl" />
+            </a>
+            <a
+              className="text-blue-900   font-semibold mt-5 text-sm flex items-center justify-center gap-4 ml-92"
+              href=""
+            >
+              SOCIAL PROCUREMENT
+              <FaArrowRight className="text-xl" />
+            </a>
+            <a
+              className="text-blue-900   font-semibold mt-5 text-sm flex items-center justify-center gap-4 "
+              href=""
+            >
+              SOCIAL VALUE 2032
+              <FaArrowRight className="text-xl" />
+            </a>
+          </div>
+        </div>
+        <div className="w-xl h-134 border-l-3 border-green-700">
+          <img
+            src="/images/i8.png "
+            className=" h-full w-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+
+      {/* social enterprise faqs */}
+      <div className="container mx-auto px-20">
+        <h1 className="text-center mt-10 text-[44px]  font-extrabold font-serif tracking-wider ">
+          Social Enterprise FAQs
+        </h1>
+
+        <div className="  mt-10 bg-gray-100 border-l-4 border-yellow-500">
+          {question.map((question, index) => (
+            <div key={index} className=" overflow-hidden mb-2">
+              <button
+                className="flex justify-between items-center w-full p-6 text-left font-[500]  hover:bg-gray-100 text-sm tracking-wide flex-wrap"
+                onClick={() => handleClick2(index)}
+              >
+                <h1 className="w-[85%] font-[900] text-lg tracking-tighter">
+                  {question}
+                </h1>
+                {open2 === index ? (
+                  <FaChevronUp className="  rounded-4xl text-sm" size={16} />
+                ) : (
+                  <FaChevronDown className="  rounded-4xl  text-sm" size={16} />
+                )}
+              </button>
+              {open2 === index && (
+                <div className="p-6  text-lg">
+                  This is the answer to the question.
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Our recommended suppliers */}
+      <div className="container mx-auto px-20 mt-20 flex justify-center gap-16">
+        <div className="w-xl h-124  border-r-3 border-green-700 p-20">
+          <img
+            src="/images/i8.png "
+            className="h-full w-full object-cover rounded-[50%]"
+            alt=""
+          />
+        </div>
+        <div className="w-4xl pt-4">
+          <h1 className="text-5xl mb-5 font-extrabold">
+            Our Recommended Supplier Network{" "}
+          </h1>
+          <p className="text-lg mb-5">
+            Social Enterprise UK's Recommended Supplier Network supports leading
+            business-to-business (B2B) trading social enterprises with a track
+            record of delivering products and services to corporate clients.
+          </p>
+          <p className="text-lg mb-5">
+            The Network enables social enterprises to grow and thrive by
+            providing a valuable platform to share best practice and challenges,
+            offer advice, find inspiration on new collaboration projects, and
+            keep updated with the latest B2B news and opportunities.
+          </p>
+          <p className="text-lg mb-5">
+            Members of the Network also benefit from a Recommended Supplier
+            badge, which publicly marks them as trusted suppliers, boosting
+            their brand visibility and credibility with current and potential
+            buyers.
+          </p>
+          <p className="text-lg ">
+            To discuss how this network can support your organisation, please
+            contact
+          </p>
+          <a className="text-blue-900   font-semibold  text-lg mt-0 " href="">
+            francesca.maines@socialenterprise.org.uk
+          </a>
+
+          <a
+            className="mt-5 bg-blue-900 text-white rounded-lg font-bold text-sm border-1 w-sm p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            GET IN TOUCH TO FIND OUT MORE
+            <FaArrowRight className="text-sm" />
+          </a>
         </div>
       </div>
     </>

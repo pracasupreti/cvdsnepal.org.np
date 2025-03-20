@@ -15,6 +15,7 @@ import {
   FaArrowRight,
   FaBook,
   FaCheckCircle,
+  FaExternalLinkAlt,
   FaFacebook,
   FaFileSignature,
   FaHandHoldingMedical,
@@ -276,10 +277,52 @@ const BlockPage = () => {
 
   const currentChallenge = challenge[currentInd];
 
+  const details = [
+    {
+      id: 1,
+      region: "Gaza",
+      description:
+        "We have reached more than 180,000 people in Gaza with critical services.",
+      image: "/images/i12.png",
+    },
+    {
+      id: 2,
+      region: "Sudan",
+      description:
+        "Sudan is now facing the largest humanitarian crisis ever recorded",
+      image: "/images/i12.png",
+    },
+    {
+      id: 3,
+      region: "Democratic Republic of Congo",
+      description: "Conflict has forced almost 3 million to become displaced",
+      image: "/images/i12.png",
+    },
+    {
+      id: 4,
+      region: "Democratic Republic of Congo",
+      description: "Conflict has forced almost 3 million to become displaced",
+      image: "/images/i12.png",
+    },
+    {
+      id: 5,
+      region: "Democratic Republic of Congo",
+      description: "Conflict has forced almost 3 million to become displaced",
+      image: "/images/i12.png",
+    },
+    {
+      id: 6,
+      region: "Democratic Republic of Congo",
+      description: "Conflict has forced almost 3 million to become displaced",
+      image: "/images/i12.png",
+    },
+  ];
+
+
   return (
     <>
       {/* partners and sponsors */}
-      <div className="container mx-auto px-40">
+      <div className="container mx-auto px-40 mt-70">
         <h1 className="text-center mt-20 text-4xl font-[400] font-mono">
           Partners and Sponsors
         </h1>
@@ -422,7 +465,6 @@ const BlockPage = () => {
         </div>
       </div>
       {/* common question */}
-
       <div className="container mx-auto px-50">
         <h1 className="text-center mt-10 text-[40px]  font-semibold font-serif tracking-wider ">
           Common Questions
@@ -609,7 +651,7 @@ const BlockPage = () => {
           className=" absolute right-[16%] top-[50%] z-200 "
           onClick={scrollRight}
         >
-          <IoIosArrowDropright className="text-6xl text-orange-600" />
+          {/* <IoIosArrowDropright className="text-6xl text-orange-600" /> */}
         </button>
       </div>
       {/* UAE nation brand */}
@@ -776,7 +818,6 @@ const BlockPage = () => {
           <img className="w-full" src="/images/i7.png" alt="" />
         </div>
       </div>
-
       {/* Consultations */}
       <div className="container mx-auto mt-20 px-30 ">
         <h1 className=" text-4xl">Consultations</h1>
@@ -819,9 +860,7 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* video section */}
-
       <div className="container mx-auto mt-10 px-30">
         <h1 className="text-4xl font-bold mb-10">Videos</h1>
         <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -859,9 +898,7 @@ const BlockPage = () => {
           </h1>
         </a>
       </div>
-
       {/* living in dubai */}
-
       <div className="container mx-auto mt-20  flex items-center justify-center gap-10 ">
         <div className="w-[40%]">
           <h1 className="text-5xl font-semibold">Living in Dubai</h1>
@@ -903,9 +940,7 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* footer */}
-
       <footer className="container mx-auto  mt-20 ">
         <div className="flex items-center justify-center mb-2">
           <div className="">
@@ -979,9 +1014,7 @@ const BlockPage = () => {
           <p>Page Last modified : 23-05-2024</p>
         </div>
       </footer>
-
       {/* document recurement list */}
-
       <div className="container mx-auto px-20 mt-20">
         <h2 className="text-3xl font-bold mb-6">
           For funding, providers usually ask for these documents:
@@ -998,7 +1031,6 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* Digitalizing Life in Dubai Section */}
       <div className="container mx-auto  mt-20">
         <h1 className="text-5xl font-bold text-center mb-10">
@@ -1036,9 +1068,7 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* Crises the world can't ignore */}
-
       <div className="container mx-auto px-20  mt-15">
         <div className="flex items-center mb-8">
           <div className="w-[6px] h-16 bg-red-600 mr-4"></div>
@@ -1070,9 +1100,7 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* crisis in sudan */}
-
       <div className="container mx-auto mt-20 flex items-center justify-center gap-10">
         <div className="w-152 h-154 relative">
           <div className="w-full h-92 overflow-hidden">
@@ -1108,9 +1136,7 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* crisis watch footer */}
-
       <footer className="container mx-auto mt-10  flex justify-center gap-10 items-start">
         <div className="w-112 ">
           <h3 className="flex items-center text-black font-bold mb-4 ">
@@ -1213,9 +1239,7 @@ const BlockPage = () => {
           </div>
         </div>
       </footer>
-
       {/* image slide */}
-
       <div className="max-w-5xl mx-auto mt-10">
         <div className="relative">
           <div className="w-full h-full">
@@ -1271,9 +1295,7 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* Crises the world can't ignore */}
-
       <div className="container mx-auto px-20  mt-15">
         <div className="flex items-center mb-8">
           <div className="w-[6px] h-16 bg-yellow-400 mr-4"></div>
@@ -1305,9 +1327,7 @@ const BlockPage = () => {
           ))}
         </div>
       </div>
-
       {/* Thank you supporters  */}
-
       <div className="container mx-auto px-20  mt-15">
         <div className="flex items-center mb-8">
           <div className="w-[6px] h-16 bg-yellow-400 mr-4"></div>
@@ -1354,7 +1374,6 @@ const BlockPage = () => {
           urgent need.
         </h1>
       </div>
-
       {/* How do floods  */}
       <div className="container mx-auto mt-20 flex items-center justify-center gap-10">
         <div className="w-152 h-154 relative">
@@ -1399,7 +1418,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* 12 women activists */}
       <div className="container mx-auto px-20 mt-20 relative">
         <div className="h-122 w-6xl bg-gray-100 overflow-hidden flex items-center">
@@ -1448,7 +1466,6 @@ const BlockPage = () => {
           </a>
         </div>
       </div>
-
       {/* Related countries */}
       <div className="container mx-auto px-20  mt-15">
         <div className="flex items-center mb-8">
@@ -1494,9 +1511,7 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* Get involved with a challenge  */}
-
       <div className="container mx-auto px-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-start mt-20">
         <div className="pr-14">
           <h2 className="text-6xl font-bold text-orange-600 mb-8">
@@ -1608,7 +1623,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* take part in challenge */}
       <div className="container mx-auto px-20 mt-10">
         <h1 className="text-4xl font-bold text-orange-500 mb-6 w-6xl mx-auto">
@@ -1653,7 +1667,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* Other ways to Get Involved */}
       <div className="container mx-auto px-20 mt-20 flex justify-center ">
         <h1 className="text-3xl w-42 font-bold text-orange-500 mt-6 ">
@@ -1707,7 +1720,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* History */}
       <div className="container mx-auto px-20 mt-20">
         <h1 className="text-4xl">History</h1>
@@ -1815,7 +1827,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* Crafts */}
       <div className="container mx-auto px-20 mt-20">
         <h1 className="text-4xl">Crafts</h1>
@@ -1905,7 +1916,6 @@ const BlockPage = () => {
           </div>
         </div>
       </div>
-
       {/* plan your holidays */}
       <div className="container mx-auto px-20 mt-20">
         <h1 className="text-4xl">Plan your holidays</h1>
@@ -1946,6 +1956,303 @@ const BlockPage = () => {
               school holiday. Image: Cymryd, Conwy
             </p>
           </div>
+        </div>
+      </div>
+      {/* kids camp free */}
+      <div className="container mx-auto px-20 mt-20 flex gap-10">
+        <div className="bg-neutral-800 text-white w-2xl">
+          <div className=" h-112 overflow-hidden ">
+            <img
+              src="/images/i19.png"
+              className="h-ful w-full object-cover"
+              alt=""
+            />
+          </div>
+          <div className="px-4 py-4 ">
+            <h1 className="flex items-center gap-4 text-2xl">
+              Kids camp free (v2) until 30/06/25*{" "}
+              <FaExternalLinkAlt className="text-xl" />
+            </h1>
+            <p className="text-lg mt-4">
+              * Book a pitch at any of our campsites before 30 June 2025, and
+              kids go free. New bookings only, made and taken from 13/02/25 to
+              30/06/25. If stay continues after 30/06/25, nights from 01/07/25
+              charged at the standard rate. Offer not valid on group bookings.
+              Offer applied automatically at checkout. Subject to availability
+              and may be withdrawn at any time. Standard Holidays terms and
+              conditions apply. Image: Low Wray Campsite, Cumbria
+            </p>
+          </div>
+        </div>
+        <div className="bg-neutral-800 text-white w-2xl">
+          <div className=" h-112 overflow-hidden ">
+            <img
+              src="/images/i19.png"
+              className="h-ful w-full object-cover"
+              alt=""
+            />
+          </div>
+          <div className="px-4 py-4 ">
+            <h1 className="flex items-center gap-4 text-2xl">
+              Save 15% on pod stays until 06/04/25*{" "}
+              <FaExternalLinkAlt className="text-xl" />
+            </h1>
+            <p className="text-lg mt-4">
+              "Book any pod at any of our campsites before 6 April 2025, and
+              save 15%. New bookings only, made and taken from 01/03/25 to
+              06/04/25, for up to seven night stays. The whole stay must fall
+              within the offer period in order for the offer to apply. Stays
+              that run beyond 06/04/25 will be charged at the normal rate. Offer
+              not valid on group bookings. Offer applied automatically at
+              checkout. Subject to availability and may be withdrawn at any
+              time. Standard Holidays terms and conditions apply. Image: Great
+              Langdale Campsite, Cumbria
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* award winning holidays holidays  */}
+      <div className="container mx-auto px-20 mt-20 ">
+        <h1 className="text-4xl mb-10">Award-winning holidays</h1>
+        <div className="flex gap-10">
+          <div className="  w-2xl">
+            <div className=" h-112 overflow-hidden ">
+              <img
+                src="/images/i19.png"
+                className="h-ful w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div className="px-4 py-4 ">
+              <h1 className="text-2xl">
+                The Great Outdoors Reader Award 2025{" "}
+              </h1>
+              <p className="text-lg mt-4">
+                Great Langdale Campsite has won the Campsite of the Year
+                category in the The Great Outdoors Reader Awards 2025. The team
+                at Great Langdale works hard to deliver the best possible
+                experience for campsite guests and to bring people closer to the
+                nature, beauty and history of this National Park and World
+                Heritage area. Image: Great Langdale Campsite, Cumbria
+              </p>
+            </div>
+          </div>
+          <div className="  w-2xl">
+            <div className=" h-112 overflow-hidden ">
+              <img
+                src="/images/i19.png"
+                className="h-ful w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div className="px-4 py-4 ">
+              <h1 className="flex items-center gap-4 text-2xl">
+                Which? Recommended UK Holiday Cottages Provider
+              </h1>
+              <p className="text-lg mt-4">
+                We've been named Which? Recommended UK Holiday Cottages Provider
+                2024. We were chosen because of our 5-star customer service,
+                booking process and communication, and the quality and
+                cleanliness of our accommodation. Image: Hop Kiln Mews,
+                Herefordshire
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Handbook and magazine */}
+      <div className="container mx-auto px-20 mt-20">
+        <h1 className="text-4xl">Handbook and magazine</h1>
+
+        <div className="flex justify-between mt-10">
+          <div className="w-2xl border-1 border-gray-300">
+            <div className="w-full h-102 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                Our members' handbook →
+              </h1>
+              <p className="text-[15px] mt-2">
+                Your handbook is a great source of inspiration for when you're
+                planning your next day out. See what's included in the 2025
+                edition.
+              </p>
+            </div>
+          </div>
+          <div className="w-2xl border-1 border-gray-300">
+            <div className="w-full h-102 relative">
+              <img
+                src="/images/i10.png"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <span className="text-lg font-medium absolute bottom-3 left-4 bg-white z-200 border-1  px-2 uppercase">
+                Article
+              </span>
+            </div>
+            <div className="p-4">
+              <h1 className="text-2xl tracking-wider">
+                Your members' magazine →{" "}
+              </h1>
+              <p className="text-[15px] mt-2">
+                As a member of the National Trust you'll receive three editions
+                of our beautifully illustrated magazine each year as an
+                exclusive benefit, full of stories from behind the scenes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* garden furniture */}
+      <div className="container mx-auto px-20 mt-20 flex justify-center gap-10">
+        <div className="w-4xl">
+          <h1 className="text-4xl mb-10 font-medium">
+            Garden furniture from the National Trust
+          </h1>
+          <p className="text-xl mb-10">
+            As the days get longer and the sun starts to shine, make the most of
+            your green space with garden furniture inspired by the places in our
+            care.
+          </p>
+          <p className="text-xl mb-10">
+            Designed in partnership with garden furniture experts Ascalon, the
+            Oak Leaf outdoor furniture collection feautres oak leaf detailing
+            and helps look after nature, beauty and history with every purchase.
+          </p>
+          <a
+            className="bg-neutral-900 text-white rounded-4xl text-lg border-1 w-52 p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            Browse More
+            <FaArrowRight className="text-xl" />
+          </a>
+        </div>
+        <div className="w-xl h-102 bg-red-400">
+          <img
+            src="/images/i19.png "
+            className=" h-full w-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+      {/* our partner */}
+      <div className="container mx-auto px-40 mt-70">
+        <h1 className="text-center mt-20 text-5xl  font-mono font-bold tracking-tighter">
+          Our
+          <span className="text-blue-400"> Partners</span>
+        </h1>
+        <h1 className="text-center  w-xl mx-auto mt-10 text-lg">
+          At Social Enterprise UK we work with a wide range of partners who work
+          with us to help grow and support social enterprises
+        </h1>
+
+        <div className="mt-20 flex justify-center gap-20  ">
+          <div className="  h-32 w-32">
+            <img
+              className="h-full w-full object-contain"
+              src="/images/1.png"
+              alt=""
+            />
+          </div>{" "}
+          <div className="h-32 w-32 ">
+            <img
+              className="h-full w-full object-contain"
+              src="/images/2.png"
+              alt=""
+            />
+          </div>{" "}
+          <div className="h-32 w-32 ">
+            <img
+              className="h-full w-full object-contain"
+              src="/images/3.png"
+              alt=""
+            />
+          </div>{" "}
+          <div className="h-32 w-32 ">
+            <img
+              className="h-full w-full object-contain"
+              src="/images/1.png"
+              alt=""
+            />
+          </div>{" "}
+          <div className="h-32 w-32 ">
+            <img
+              className="h-full w-full object-contain"
+              src="/images/1.png"
+              alt=""
+            />
+          </div>{" "}
+        </div>
+      </div>
+
+      {/* building the evidence */}
+      <div className="container mx-auto px-20 mt-20 flex justify-center gap-16">
+        <div className="w-xl h-124 bg-red-400 border-r-3 border-green-700">
+          <img
+            src="/images/i8.png "
+            className=" h-full w-full object-cover"
+            alt=""
+          />
+        </div>
+        <div className="w-4xl pt-4">
+          <h1 className="text-4xl mb-10 font-extrabold">
+            Building the evidence base and shaping the policy environment{" "}
+          </h1>
+          <p className="text-xl mb-10">
+            In order to create a policy environment which supports social
+            enterprise, we campaign on behalf of the social enterprise community
+            working with the UK Government, local and national policy-makers and
+            politicians from all major parties.
+          </p>
+          <p className="text-xl mb-10">
+            We were responsible for passing the Social Value Act, which is
+            helping to transform public spending, and we run the Secretariat for
+            the All-Party Parliamentary Group (APPG) on Social, Cooperative and
+            Community Economy. Our political and campaigning work is built upon
+            our comprehensive research, which grows the evidence base for the
+            impact social enterprises are having on society, the economy and the
+            environment.
+          </p>
+          <button
+            className="bg-blue-900 text-white rounded-lg font-bold text-lg border-1 w-2xl p-3 text-center flex items-center justify-center gap-4"
+            href=""
+          >
+            FIND OUT MORE ABOUT OUR POLICY AND RESEARCH WORK
+            <FaArrowRight className="text-xl" />
+          </button>
+        </div>
+      </div>
+      {/* all about social enterprise */}
+      <div className="container mx-auto px-20  mt-15">
+        <div className="grid grid-cols-3 items-center justify-center gap-6">
+          {details.map((crisis) => (
+            <div
+              key={crisis.id}
+              className=" relative h-82 overflow-hidden "
+            >
+              <div className="h-64 overflow-hidden w-112">
+                <img
+                  src={crisis.image}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className=" absolute left-8 bottom-0 z-20 p-6 border-b-4 border-blue-900 bg-gray-100 w-92 h-42">
+                <div className="flex justify-between items-center mb-6">
+                  <h3 className="text-xl font-extrabold">{crisis.region}</h3>
+                  <ChevronRight className="" />
+                </div>
+                <p className="text-xl">{crisis.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

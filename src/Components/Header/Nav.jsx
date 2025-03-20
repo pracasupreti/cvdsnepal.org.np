@@ -39,7 +39,7 @@ const Nav = () => {
     <>
       {/* Navigation Bar */}
       <div
-        className={`w-[100vw] z-50 ${
+        className={`w-[100vw] z-900 ${
           window.innerWidth >= 1024
             ? `fixed top-0 left-0 ${
                 isScrolled ? "bg-[#233a71] shadow-2xl" : "bg-[#233a71]"
@@ -150,7 +150,7 @@ const Nav = () => {
               {activitiesHovered && (
                 <>
                   <div className="absolute h-3 w-full top-full left-0"></div>
-                  <div className="absolute top-[calc(100%+0.75rem)] w-52 h-16 bg-blue-100 text-black z-10">
+                  <div className="absolute top-[calc(100%+0.75rem)] w-52 h-16 bg-blue-100 text-black z-800">
                     <Link
                       to="/pipeline"
                       className="group flex items-center justify-center text-2xl w-full h-full"
